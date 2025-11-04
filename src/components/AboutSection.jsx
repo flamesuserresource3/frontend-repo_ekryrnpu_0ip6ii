@@ -12,7 +12,7 @@ const AboutSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          About
+          Tentang
         </motion.h2>
         <motion.p
           className="max-w-3xl text-sm md:text-base leading-relaxed text-slate-300/90"
@@ -21,7 +21,7 @@ const AboutSection = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.1, duration: 0.6, ease: 'easeOut' }}
         >
-          Writing, noise, and silence. Between the chaos of riffs and the stillness of thought, I search for meaning. A mind wandering through black metal, literature, and the quiet corners of Japan—collecting fragments, translating their shadows, and returning to the page with what remains.
+          Menulis di antara kebisingan dan keheningan. Dari riff yang berkarat sampai kata yang terlupa, semuanya adalah pencarian makna di ruang sunyi antara distorsi yang menyekakan telinga dan sastra yang bisa merasa. Sastra memberiku ketenangan, musik memberiku keberanian.
         </motion.p>
       </div>
     </section>

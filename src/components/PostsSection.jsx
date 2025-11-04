@@ -26,7 +26,7 @@ const PostsSection = () => {
             </p>
           </motion.article>
 
-          {/* Embedded note.com post 1 */}
+          {/* Embedded note.com post after first title */}
           <motion.article
             className="rounded border border-white/5 bg-gradient-to-b from-white/5 to-black/20 p-5"
             initial={{ opacity: 0, y: 8 }}
@@ -34,8 +34,7 @@ const PostsSection = () => {
             viewport={{ once: true, margin: '-50px' }}
             transition={{ delay: 0.05, duration: 0.6, ease: 'easeOut' }}
           >
-            <h3 className="font-serif text-xl md:text-2xl text-white/90">日常生活における日本文化とスンダ文化の隠れた共通点</h3>
-            <div className="mt-4 flex justify-center">
+            <div className="mt-1 flex justify-center">
               <iframe
                 className="note-embed rounded border border-white/10"
                 src="https://note.com/embed/notes/n60f89b4c8c58"
@@ -46,7 +45,7 @@ const PostsSection = () => {
             </div>
           </motion.article>
 
-          {/* Embedded note.com post 2 */}
+          {/* Second titled embed */}
           <motion.article
             className="rounded border border-white/5 bg-gradient-to-b from-white/5 to-black/20 p-5"
             initial={{ opacity: 0, y: 8 }}
@@ -54,7 +53,7 @@ const PostsSection = () => {
             viewport={{ once: true, margin: '-50px' }}
             transition={{ delay: 0.1, duration: 0.6, ease: 'easeOut' }}
           >
-            <h3 className="font-serif text-xl md:text-2xl text-white/90">note — embedded reading</h3>
+            <h3 className="font-serif text-xl md:text-2xl text-white/90">日常生活における日本文化とスンダ文化の隠れた共通点</h3>
             <div className="mt-4 flex justify-center">
               <iframe
                 className="note-embed rounded border border-white/10"

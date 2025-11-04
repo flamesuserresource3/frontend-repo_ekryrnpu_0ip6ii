@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const HeroCover = () => {
   return (
-    <section className="relative h-[80vh] w-full overflow-hidden bg-black text-white">
+    <section className="relative h-screen w-full overflow-hidden bg-black text-white">
       <div className="absolute inset-0">
         <Spline
           scene="https://prod.spline.design/qMOKV671Z1CM9yS7/scene.splinecode"
