@@ -2,21 +2,10 @@ import React from 'react';
 import { Music } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const reviews = [
-  {
-    band: 'Burzum',
-    title: 'Hvis lyset tar oss — Snow that hums',
-    source: 'From a discussion on aesthetics and isolation',
-    blurb:
-      'Guitars like mist over fjords; repetition as a monastic vow. The song refuses climax, and in that refusal finds form.',
-  },
-  {
-    band: 'Sigh (サイ)',
-    title: 'Hail Horror Hail — Theatrical ashes',
-    source: 'Adapted from a midnight thread',
-    blurb:
-      'Baroque keys in a charred theater. The smirk behind the corpse paint is a philosophy lecture.',
-  },
+const archiveLinks = [
+  { title: '구룡', url: 'https://www.facebook.com/share/p/1TW8qwRr9D/' },
+  { title: 'Pasteboard', url: 'https://www.facebook.com/share/p/1CqKfVpa3c/' },
+  { title: 'Amorphous', url: 'https://www.facebook.com/share/p/17SoENUzWq/' },
 ];
 
 const MusicSection = () => {
@@ -25,23 +14,26 @@ const MusicSection = () => {
       <div className="mx-auto max-w-5xl px-6 py-16">
         <div className="mb-10 flex items-center gap-3">
           <Music className="h-5 w-5 text-slate-100" />
-          <h2 className="font-serif text-2xl md:text-3xl tracking-tight text-white/90">Music Articles & Reviews</h2>
+          <h2 className="font-serif text-2xl md:text-3xl tracking-tight text-white/90">Music Archive</h2>
         </div>
 
-        <div className="space-y-6">
-          {reviews.map((r, idx) => (
+        <div className="space-y-4">
+          {archiveLinks.map((item, i) => (
             <motion.div
-              key={r.title}
-              className="rounded border border-white/5 bg-gradient-to-b from-white/5 to-black/20 p-5"
-              initial={{ opacity: 0, y: 10 }}
+              key={item.title}
+              initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
-              transition={{ delay: idx * 0.1, duration: 0.6, ease: 'easeOut' }}
+              transition={{ delay: i * 0.06, duration: 0.5, ease: 'easeOut' }}
             >
-              <div className="text-xs uppercase tracking-widest text-slate-400/80">{r.band}</div>
-              <h3 className="mt-2 font-serif text-xl text-white/90">{r.title}</h3>
-              <p className="text-xs text-slate-400 italic">{r.source}</p>
-              <p className="mt-3 text-sm leading-relaxed text-slate-300/90">{r.blurb}</p>
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-block rounded border border-white/5 bg-white/[0.03] px-4 py-3 font-serif text-white/90 underline decoration-white/20 underline-offset-4 transition hover:decoration-white/60 hover:shadow-[0_0_20px_rgba(255,255,255,0.08)]"
+              >
+                {item.title}
+              </a>
             </motion.div>
           ))}
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroCover from './components/HeroCover';
+import AboutSection from './components/AboutSection';
 import PostsSection from './components/PostsSection';
 import MusicSection from './components/MusicSection';
 import LinksSection from './components/LinksSection';
@@ -21,6 +22,7 @@ function App() {
       />
 
       <HeroCover />
+      <AboutSection />
       <PostsSection />
       <MusicSection />
       <LinksSection />
