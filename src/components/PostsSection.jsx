@@ -21,9 +21,6 @@ const PostsSection = () => {
             transition={{ duration: 0.6, ease: 'easeOut' }}
           >
             <h3 className="font-serif text-xl md:text-2xl text-white/90">青春は終わらない</h3>
-            <p className="mt-3 text-sm leading-relaxed text-slate-300/90">
-              The season of becoming lingers like feedback in an empty hall. The chords stretch, and what we call youth is just the room learning how to listen.
-            </p>
           </motion.article>
 
           {/* Embedded note.com post after first title */}
@@ -43,6 +40,7 @@ const PostsSection = () => {
                 height={400}
               />
             </div>
+            <script async src="https://note.com/scripts/embed.js" charSet="utf-8" />
           </motion.article>
 
           {/* Second titled embed */}
@@ -63,6 +61,7 @@ const PostsSection = () => {
                 height={400}
               />
             </div>
+            <script async src="https://note.com/scripts/embed.js" charSet="utf-8" />
           </motion.article>
         </div>
       </div>

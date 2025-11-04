@@ -14,7 +14,7 @@ const MusicSection = () => {
       <div className="mx-auto max-w-5xl px-6 py-16">
         <div className="mb-10 flex items-center gap-3">
           <Music className="h-5 w-5 text-slate-100" />
-          <h2 className="font-serif text-2xl md:text-3xl tracking-tight text-white/90">Music Archive</h2>
+          <h2 className="font-serif text-2xl md:text-3xl tracking-tight text-white/90">Review Musik</h2>
         </div>
 
         <div className="space-y-4">
@@ -30,7 +30,7 @@ const MusicSection = () => {
                 href={item.url}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-block rounded border border-white/5 bg-white/[0.03] px-4 py-3 font-serif text-white/90 underline decoration-white/20 underline-offset-4 transition hover:decoration-white/60 hover:shadow-[0_0_20px_rgba(255,255,255,0.08)]"
+                className="inline-block rounded border border-white/5 bg-white/[0.03] px-4 py-3 font-serif text-white/90 underline decoration-white/20 underline-offset-4 transition hover:decoration-white/60 hover:shadow-[0_0_20px_rgba(255,255,255,0.12)]"
               >
                 {item.title}
               </a>

@@ -39,7 +39,7 @@ const LinksSection = () => {
                       href={l.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="font-serif text-white/90 underline decoration-white/20 underline-offset-4 transition hover:decoration-white/60 hover:text-white hover:shadow-[0_0_20px_rgba(255,255,255,0.08)]"
+                      className="font-serif text-white/90 underline decoration-white/20 underline-offset-4 transition hover:decoration-white/60 hover:text-white hover:shadow-[0_0_24px_rgba(255,255,255,0.14)]"
                     >
                       {l.title}
                     </a>
@@ -54,7 +54,7 @@ const LinksSection = () => {
           <div>
             <div className="mb-6 flex items-center gap-3">
               <LinkIcon className="h-5 w-5 text-slate-200" />
-              <h2 className="font-serif text-2xl md:text-3xl tracking-tight text-white/90">Connect</h2>
+              <h2 className="font-serif text-2xl md:text-3xl tracking-tight text-white/90">Sosial Media</h2>
             </div>
             <ul className="space-y-4">
               {socials.map((s, i) => (
@@ -72,7 +72,7 @@ const LinksSection = () => {
                       href={s.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="font-serif text-white/90 underline decoration-white/20 underline-offset-4 transition hover:decoration-white/60 hover:text-white hover:shadow-[0_0_20px_rgba(255,255,255,0.08)]"
+                      className="font-serif text-white/90 underline decoration-white/20 underline-offset-4 transition hover:decoration-white/60 hover:text-white hover:shadow-[0_0_24px_rgba(255,255,255,0.14)]"
                     >
                       {s.title}
                     </a>
